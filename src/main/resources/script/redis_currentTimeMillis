@@ -1,0 +1,2 @@
+local times = redis.pcall("TIME")
+return tonumber(times[1])*1000+tonumber(times[2])/1000
